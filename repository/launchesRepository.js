@@ -20,9 +20,15 @@ async function getUpComingLaunches() {
   return await results.data;
 }
 
+async function getPastLaunches() {
+  const results = await axios.get('https://api.spacexdata.com/v5/launches/past');
+  return await results.data;
+}
+
 module.exports = {
   getAll,
   getLastestLaunches,
   getNextLaunches,
-  getUpComingLaunches
+  getUpComingLaunches,
+  getPastLaunches
 }

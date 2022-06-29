@@ -40,9 +40,20 @@ async function getUpComingLaunches(req, res, next) {
   }
 }
 
+async function getPastLaunches(req, res, next) {
+  try {
+    const getPast = await launchesRepository.getPastLaunches();
+
+    res.status(200).json(getPast);
+  } catch (e) {
+    next(e);
+  }
+}
+
 module.exports = {
   getAllLaunches,
   getLastestLaunches,
   getNextLaunches,
-  getUpComingLaunches
+  getUpComingLaunches,
+  getPastLaunches
 }
