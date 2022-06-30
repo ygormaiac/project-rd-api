@@ -54,6 +54,8 @@ Foi utilizado o **Padrão de projeto Repository**, que consiste em ser um servi�
 
 Foi utilizado o **Postman** e o Thunder Client para verificar se as rotas estavam em pleno funcionamento para gerar o JSON vindo do endpoint. E utilizei o **Axios** para o consumo da API da SpaceX.
 
+![Postman](assets/postman.png)
+
 #### :gear: Tecnologias utilizadas
 
 1. [Express](https://expressjs.com/pt-br/): Utilizado para criação das rotas da API.
